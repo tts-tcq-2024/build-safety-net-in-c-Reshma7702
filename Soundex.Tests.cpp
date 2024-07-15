@@ -29,7 +29,7 @@ TEST(SoundexTestsuite, ReplacesConsonantsWithAppropriateDigits_4) {
     // AAA
     char soundex[5];
     generateSoundex("Bgfp", soundex);
-    ASSERT_STREQ(soundex, "B100");
+    ASSERT_STREQ(soundex, "B210");
 }
 
 // Two letters with the same number separated by 'h', 'w' or 'y' are coded as a single number
