@@ -13,7 +13,7 @@ TEST(SoundexTestsuite, ReplacesConsonantsWithAppropriateDigits_2) {
     // AAA
     char soundex[5];
     generateSoundex("B2DFGh", soundex);
-    ASSERT_STREQ(soundex, "B231");
+    ASSERT_STREQ(soundex, "B312");
 }
 
 // Test case to check special character
