@@ -39,3 +39,9 @@ TEST(SoundexTestsuite, ReplacesConsonantsWithAppropriateDigits_5) {
     generateSoundex("DSjZ", soundex);
     ASSERT_STREQ(soundex, "D200");
 }
+TEST(SoundexTestsuite, ReplacesConsonantsWithAppropriateDigits_5) {
+    // AAA
+    char soundex[5];
+    generateSoundex("D[SjZ", soundex);
+    ASSERT_STREQ(soundex, "D200");
+}
